@@ -149,8 +149,9 @@ body {
 }
 .buds{
     justify-content: start;
-    font-weight: 600;
+    font-weight: 700;
     font-size: larger;
+    color: #404040;
 }
 .all{
     color: #48afff;
@@ -216,7 +217,8 @@ body {
     padding: 80px 0px 30px 0px;
 }
 .container-best h4{
-    font-weight: 500;
+    font-weight: 600;
+    font-size: larger;
 }
 .container-best p{
     font-weight: 200;
@@ -424,6 +426,55 @@ body {
   .box2{
     margin: 0% 1% 0% 1%;
   }
+
+  .grid-container-5 {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 15px;
+    padding: 10px;
+  }
+  
+  .grid-container-5 > div {
+    align-items: center;
+    justify-content: space-evenly;
+    background: radial-gradient(25.65% 62.25% at 27.62% 50.2%, #48afff 21.57%, #0078d5 100%);
+    border-radius: 10px;
+    padding: 20px;
+  }
+  a{
+    text-decoration: none;
+  }
+  .reason{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: radial-gradient(25.65% 62.25% at 27.62% 50.2%, #48afff 21.57%, #0078d5 100%);
+    border-radius: 10px;
+    padding: 20px;
+}
+  }
+  .reason-img {
+    width: 155px;
+    height: 155px;
+}
+  .reason-detail{
+    text-align: center;
+  }
+
+  .reason-text {
+    color: #fff;
+    font-weight: 600;
+    width: 180px;
+    margin-bottom: 25px;
+}
+
+.reason-btn {
+  background: #fba338;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: 600;
+  padding: 8px 15px;
+}
 
 
 
