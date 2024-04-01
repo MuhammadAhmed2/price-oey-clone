@@ -149,6 +149,8 @@ body {
 }
 .buds{
     justify-content: start;
+    font-weight: 600;
+    font-size: larger;
 }
 .all{
     color: #48afff;
@@ -283,7 +285,44 @@ body {
     text-align: left;
   }
 
+  .grid-container-3 {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 2%;
+    row-gap: 4%;
+    padding: 0% 5% 0% 10%;
+  }
+  .grid-item3 {
+    background: radial-gradient(50% 50% at 50% 50%, #FFF348 0%, #FFF348 100%);
+    border: none;
+    border-radius: 15px;
+    padding: 20px;
+    font-size: 70%;
+    font-weight: 100;
+    color: #404040;
+    text-align: center;
+  }
 
+  .grid-container-4 {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 2%;
+    row-gap: 10%;
+    padding: 0% 5% 0% 10%;
+    text-align: center;
+  }
+  .grid-item4 img{
+    /* background: radial-gradient(50% 50% at 50% 50%, #FFF348 0%, #FFF348 100%);
+    border: none;
+    border-radius: 15px;
+    padding: 20px;
+    font-size: 70%;
+    font-weight: 100;
+    color: #404040;*/ 
+    width: 30%;
+    text-align: center;
+    border-radius: 50%;
+  }
 
 
 
@@ -365,6 +404,9 @@ body {
     .search-bar input[type="text"] {
         width: 70%;
     }
+    .grid-container-3{
+      grid-template-columns: auto auto;
+    }
 }
 
 @media screen and (max-width: 425px) {
@@ -379,6 +421,9 @@ body {
     }
     .grid-container-2{
         grid-template-columns: auto;
+    }
+    .grid-container-4{
+      grid-template-columns: auto auto;
     }
     .item1 {
         grid-column-start: 1;
