@@ -431,6 +431,7 @@ body {
   align-items: flex-start;
   justify-content: space-between;
 }
+
 .verified-user {
   padding-top: 15px;
   padding-right: 15px;
@@ -464,7 +465,7 @@ body {
   margin: 0% 1% 0% 1%;
 }
 
-.box3{
+.box3 {
   margin: 0% 1% 1% 1%;
   padding: 0% 1% 2% 1%;
   border-radius: 8px;
@@ -517,7 +518,7 @@ body {
 }
 
 
-.foot-container{
+.foot-container {
   margin: 5% 0% 6% 0%;
   padding: 3% 4% 3% 4%;
   display: flex;
@@ -526,79 +527,85 @@ body {
   background-color: white;
 }
 
-.features{
+.features {
   justify-content: center;
   text-align: center;
 }
-.features p{
- font-weight: 300;
- font-size: smaller;
+
+.features p {
+  font-weight: 300;
+  font-size: smaller;
 }
-.fe-img{
+
+.fe-img {
   padding: 2%;
 }
 
-.fe-title{
+.fe-title {
   color: #404040;
   font-weight: 600;
   font-size: 98%;
 }
 
-footer{
+footer {
   background-color: #48afff;
 }
 
-.foot-grid{
+.foot-grid {
   padding: 5% 3% 5% 2%;
   display: grid;
   grid-template-columns: auto auto auto;
   column-gap: 20%;
 }
-.stuff{
+
+.stuff {
   white-space: nowrap;
-  padding-left: 0%;
+  padding-left: 1%;
 }
-.links p{
+
+.links p {
   font-size: 50%;
   padding-left: 1rem;
   color: white;
   font-weight: 300;
   font-size: smaller;
-  margin: 10px;
+  margin-bottom: 10px;
 }
 
-.fe-title2{
+.fe-title2 {
   color: white;
   font-size: 20px;
   font-weight: 400;
 }
-.logo2{
-  display: none;
+
+.logo2 {
+  max-width: 126px;
 }
-.payments{
+
+.payments {
   white-space: wrap;
   width: 40%;
+  margin-bottom: 20px;
 }
-#play-store{
+
+#play-store {
   width: 50%;
 }
-#services{
+
+#services {
   display: block;
 }
-.copyright{
+
+.end {
+  padding: 1%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #37a2f4;
+}
+
+.copyright {
   color: white;
-  padding-left: 1%;
-}
-.end{
-  padding: 10px;
-  display: flex;
-  background-color:#379deb;
-  align-items: center;
-}
-.social-media{
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 
@@ -621,25 +628,30 @@ footer{
     row-gap: 4%;
     grid-template-columns: auto auto;
   }
+
   .grid-container-2 {
     grid-template-columns: auto auto;
   }
 
-  .main-box{
+  .main-box {
     grid-template-columns: auto;
     text-align: center;
   }
-  .box{
+
+  .box {
     margin-bottom: 10px;
   }
-  .reason{
+
+  .reason {
     display: block;
+
     text-align: center;
   }
-  
-  .grid-container-5{
+
+  .grid-container-5 {
     grid-template-columns: auto;
   }
+
   .search-bar {
     margin: 0;
   }
@@ -674,90 +686,61 @@ footer{
   .pic {
     white-space: wrap;
   }
-  }
-  @media screen and (max-width: 425px) {
-    .search-bar input[type="text"] {
-      width: 60%;
-    }
+}
 
-    
-  #services{
+@media screen and (max-width: 425px) {
+  .search-bar input[type="text"] {
+    width: 60%;
+  }
+
+  .foot-container{
+    margin: 5% 0% 6% 0%;
+    padding: 3% 4% 3% 4%;
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: white;
+  }
+  
+  .features{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .foot-grid {
+    column-gap: 2%;
+    row-gap: 4%;
+    grid-template-columns: auto;
+  }
+
+
+  .product-container {
+    padding: 0px;
+  }
+
+  .grid-container {
+    grid-template-columns: auto auto;
+  }
+
+  .grid-container-2 {
+    grid-template-columns: auto;
+  }
+
+  .grid-container-4 {
+    grid-template-columns: auto auto;
+  }
+
+  .item1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+}
+
+@media screen and (max-width: 530px) {
+  .user-actions {
     display: none;
-  }    
-
-    .product-container {
-      padding: 0px;
-    }
-
-    .grid-container {
-      grid-template-columns: auto auto;
-    }
-
-    .grid-container-2 {
-      grid-template-columns: auto;
-    }
-
-    .grid-container-4 {
-      grid-template-columns: auto auto;
-    }
-
-    .item1 {
-      grid-column-start: 1;
-      grid-column-end: 3;
-    }
-
   }
 
-  @media screen and (max-width: 530px) {
-    .user-actions {
-      display: none;
-    }
-
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
