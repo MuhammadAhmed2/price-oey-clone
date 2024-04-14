@@ -19,11 +19,9 @@ body {
   align-items: center;
 }
 
-/* Your existing CSS styles */
 
 .search-bar {
   position: relative;
-  /* Position relative for absolute positioning */
   flex-grow: 1;
   text-align: center;
   margin: 0 10px;
@@ -31,26 +29,11 @@ body {
 
 .search-bar input[type="text"] {
   padding: 8px 30px;
-  /* Adjust padding for the icon */
   border: none;
   border-radius: 5px;
   width: 100%;
-  /* Fill the available space */
   margin-bottom: 5px;
 }
-
-.fa-microphone {
-  position: absolute;
-  top: 50%;
-  right: 10px;
-  /* Adjust as needed */
-  transform: translateY(-50%);
-  pointer-events: none;
-  /* Ensure the icon doesn't interfere with input */
-}
-
-/* Your existing CSS styles */
-
 
 .logo {
   width: 120px;
@@ -112,6 +95,22 @@ body {
 
 .user-actions button:first-child {
   margin-right: 10px;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: -300px; /* Initially hide it off the screen */
+  width: 300px;
+  height: 100%;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  transition: left 0.3s ease; /* Add smooth transition effect */
+  z-index: 999;
+}
+
+.show {
+  left: 0; /* Show the modal by moving it to the left */
 }
 
 /* Nabar Ended */
