@@ -1,7 +1,7 @@
 :root {
     /*  Primary */
-    --orange: hsl(26, 100%, 55%);
-    --pale-orange: hsl(25, 100%, 94%);
+    --orange: #48afff;
+    --pale-orange: hsl(223, 92%, 90%);
   
     /* Neutral */
   
@@ -33,6 +33,113 @@
   /*/////////////
   Main CSS
    //////////////*/
+
+   /* Nabar Started */
+.navbar {
+    background-color: #48afff;
+    padding: 10px;
+    margin-bottom: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  
+  .search-bar {
+    position: relative;
+    flex-grow: 1;
+    text-align: center;
+    margin: 0 10px;
+  }
+  
+  .search-bar input[type="text"] {
+    padding: 8px 30px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  
+  .logo {
+    width: 120px;
+    padding-left: 1rem;
+  }
+  
+  .burger-icon {
+    cursor: pointer;
+    color: white;
+  }
+  
+  .burger-icon .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+  }
+  
+  .search-bar {
+    flex-grow: 1;
+    text-align: center;
+    margin: 0 10px;
+  }
+  
+  .search-bar input[type="text"] {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    width: 70%;
+    margin-bottom: 5px;
+  }
+  
+  .search-bar button {
+    padding: 8px 20px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #log {
+    padding: 8px 20px;
+    border: none;
+    background-color: white;
+    color: #48afff;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #reg {
+    padding: 8px 20px;
+    border: 1px solid white;
+    background-color: #48afff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .user-actions button:first-child {
+    margin-right: 10px;
+  }
+  
+  .modal {
+    position: fixed;
+    top: 0;
+    left: -300px; /* Initially hide it off the screen */
+    width: 300px;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    transition: left 0.3s ease; /* Add smooth transition effect */
+    z-index: 999;
+  }
+  
+  .show {
+    left: 0; /* Show the modal by moving it to the left */
+  }
+  
+  /* Nabar Ended */
+  
   
   body {
     font-family: "Kumbh Sans", sans-serif;
@@ -565,7 +672,7 @@
   
   .price-cart__btn {
     width: 50%;
-    box-shadow: 0px 10px 25px 3px rgba(255, 125, 26, 0.5);
+    box-shadow: 0px 10px 25px 3px rgba(26, 221, 255, 0.5);
     display: flex;
     justify-content: center;
     align-items: center;
