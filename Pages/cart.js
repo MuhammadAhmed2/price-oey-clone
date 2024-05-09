@@ -8,6 +8,7 @@ console.log(mycart);
 let cartDisplay = document.querySelector('.cart');
 let productInfo = document.querySelector('.billing');
 let num
+let sum = 0;
 let totalPrice = []
 renderCart();
 function renderCart() {
@@ -62,9 +63,9 @@ function quantityMinus(i) {
 let subTotalPrice = document.getElementById('totalPrice')
 renderSummary()
 function renderSummary() {
-    for (let i = 0; i < mycart.length; i++) {
-        
-        
+    for (let i = 0; i < totalPrice.length; i++) {
+       sum = sum + totalPrice[i]
+       return sum;
     }
     // const sum = totalPrice.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
     subTotalPrice.innerHTML=`Rs.${sum}/-`
