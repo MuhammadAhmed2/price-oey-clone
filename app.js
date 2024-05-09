@@ -95,7 +95,7 @@ let productPlaceholder = document.querySelector(".grid-container")
     for (let i = 0; i < products.length; i++) {
       let percentage = (products[i].originalPrice - products[i].discountedPrice) / (products[i].discountedPrice) * 100;
       percentage = Math.round(percentage)
-      console.log(percentage);
+      products[i].percentageOff = percentage;
       productPlaceholder.innerHTML += `
               <div onClick="saveProduct(${i})" class="grid-item"><img
               src="${products[i].image}" alt="">
@@ -120,5 +120,5 @@ let productPlaceholder = document.querySelector(".grid-container")
   console.log(productData);
   
   // Redirect to shop.html
-  window.location.href = './shop.html';
+  window.location.href = './Pages/shop.html';
 }
