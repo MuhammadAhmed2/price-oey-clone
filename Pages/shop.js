@@ -3,8 +3,9 @@ const savedProductData = localStorage.getItem('savedProduct');
     let savedProduct = JSON.parse(savedProductData);
     console.log(savedProduct);
 
-let div = document.querySelector("main");
 
+    
+let div = document.querySelector("main");
 
 let cartIcon = "../img/cart-add.svg"
 
@@ -65,13 +66,40 @@ function quantityMinus() {
     renderProduct()
 }
 
-let cart = []
+let cart = [
+  {
+    name: "Ronin R-520",
+    image: "https://images.priceoye.pk/ronin-r-520-earbuds-pakistan-priceoye-0mmrt-270x270.webp",
+    originalPrice: 1500,
+    quantity: 1,
+    discountedPrice: 1200,
+    category: 'Wireless Earpods',
+    description: "Sleek and stylish wireless earpods with excellent sound quality."
+},
+]
+let mod = document.querySelector('.popup');
+
+function modal() {
+  mod.style.display = "block";
+  function modHide() {
+    mod.style.display = "none";
+  }
+  setTimeout(modHide, 3500)
+}
+function link() {
+  window.location.href = './cart.html'
+}
 
 function addToCart() {
-  cartIcon = "../img/cart-check.svg"
-    cart.push(savedProduct)
-    console.log(cart);
-    localStorage.setItem("userCart", cart) 
+    cartIcon = "../img/cart-check.svg"
+    if (cart.includes(savedProduct)===false) {
+      cart.push(savedProduct)
+      console.log(cart);
+      let cartData = JSON.stringify(cart);
+      localStorage.setItem("userCart", cartData)
     renderProduct()
+    }
+    modal() 
+    
 }
 
